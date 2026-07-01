@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Email Login</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:linear-gradient(135deg,#4facfe,#00f2fe);
+}
+
+.container{
+    background:#fff;
+    width:350px;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    text-align:center;
+}
+
+.container h2{
+    margin-bottom:25px;
+    color:#333;
+}
+
+.input-box{
+    margin-bottom:20px;
+}
+
+.input-box input{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+}
+
+.input-box input:focus{
+    border-color:#4facfe;
+    outline:none;
+}
+
+.options{
+    display:flex;
+    justify-content:space-between;
+    font-size:14px;
+    margin-bottom:20px;
+}
+
+.options a{
+    text-decoration:none;
+    color:#4facfe;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#4facfe;
+    color:white;
+    font-size:17px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#1d8ef7;
+}
+
+.signup{
+    margin-top:20px;
+    font-size:14px;
+}
+
+.signup a{
+    text-decoration:none;
+    color:#4facfe;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<h2>Email Login</h2>
+
+<form>
+
+<div class="input-box">
+<input type="email" placeholder="Enter your Email" required>
+</div>
+
+<div class="input-box">
+<input type="password" placeholder="Enter Password" required>
+</div>
+
+<div class="options">
+<label>
+<input type="checkbox">
+Remember Me
+</label>
+
+<a href="#">Forgot Password?</a>
+</div>
+
+<button type="submit">Login</button>
+
+<div class="signup">
+Don't have an account?
+<a href="#">Sign Up</a>
+</div>
+
+</form>
+
+</div>
+
+</body>
+</html>
